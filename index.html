@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geometry file</title>
+    <!-- link of tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link of daiysi UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+</head>
+<body>
+    <header class="">
+        <!-- navbar -->
+        <div class="navbar bg-slate-300 rounded-lg ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">Interactive 
+                </a>
+               
+            </div>
+            
+            
+            <div class="navbar-end">
+              <a class="btn bg-blue-700 font-bold text-white px-8">Blog</a>
+              
+            </div> <br>
+            
+          </div>
+          
+
+    </header>
+    <main>
+        <!-- cards section -->
+        <section class="mt-5 flex flex-col gap-5 md:flex-row">
+            <!-- cards -->
+            <div class="   grid grid-cols-1 items-center  gap-3 w-full p-8     ">
+                <!-- card-1-triangle -->
+                <div class="space-y-4 text-center bg-white rounded-lg p-2 w-full">
+                    <div >
+                        <img style="height:500px ; width:700px;" class="w-full mx-auto" src="./images/triangle.png" alt="">
+                    </div>
+                    <h1 class="text-3xl font-bold">Triangle</h1>
+                    <a class="font-bold text-slate-700 text-xl" href="https://www.google.com/search?q=formula+of+triangle%27s+area&sca_esv=82020f27733c768a&sxsrf=ACQVn08tDpZsNbdfbI3-9Asa-Mu9l_2s6A%3A1707582609600&ei=kaTHZY2kJNK64-EPsJKPoA8&ved=0ahUKEwjNsPr2mKGEAxVS3TgGHTDJA_QQ4dUDCBA&uact=5&oq=formula+of+triangle%27s+area&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmZvcm11bGEgb2YgdHJpYW5nbGUncyBhcmVhMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBBAAGB4yBBAAGB4yBBAAGB5I7iFQAFiDEXAAeAGQAQCYAaMCoAH9FaoBBDItMTG4AQPIAQD4AQHiAwQYACBB&sclient=gws-wiz-serp">Area(A)= 0.5 * Base * Height</a>
+                    <div class="flex items-center  gap-3 justify-center  ">
+                        <p class="font-bold text-2xl">Base:</p>
+                        <input id="triangle-base" class="text-slate-900 rounded-lg bg-slate-300  font-bold px-5 py-3" type="text" placeholder="base">
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <div class="flex items-center  gap-3 justify-center x">
+                        <p class="font-bold text-2xl">Height:</p>
+                        <input id="triangle-height" class="text-slate-900 bg-slate-300  font-bold rounded-lg  px-5 py-3" type="text" placeholder="height">
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <button id="btn-triangle"  class="text-white font-bold bg-blue-700 px-8 py-2 hover:bg-blue-300 rounded-lg">Calculate</button>
+                    
+
+                </div>
+                <!-- card-2-rectangle-->
+                <div class="space-y-4 text-center bg-white rounded-lg p-2 w-full">
+                    <div >
+                        <img style="height:500px ; width:700px;"  class="w-full mx-auto" src="./images/rectangle.png" alt="">
+                    </div>
+                    <h1 class="text-3xl font-bold">Rectangle</h1>
+                    <a class="font-bold text-slate-700 text-xl" href="https://www.google.com/search?q=formula+of+rectangle+area&sca_esv=82020f27733c768a&sxsrf=ACQVn0-5OfIQAiG1p5t5JHUP3ayOKIlXPw%3A1707582624112&ei=oKTHZau8BqKJ4-EPmfat6AQ&ved=0ahUKEwirjPD9mKGEAxWixDgGHRl7C00Q4dUDCBA&uact=5&oq=formula+of+rectangle+area&gs_lp=Egxnd3Mtd2l6LXNlcnAiGWZvcm11bGEgb2YgcmVjdGFuZ2xlIGFyZWEyCxAAGIAEGIoFGJECMgYQABgHGB4yBhAAGAcYHjIKEAAYBxgeGA8YCjILEAAYgAQYigUYkQIyBRAAGIAEMgYQABgIGB4yBhAAGAgYHjIGEAAYCBgeMgYQABgIGB5IqRpQ0QNY3BVwAXgBkAEAmAGQAqAB0hKqAQQyLTEwuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICCBAAGAgYBxge4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp">Area(A)= Length * Width</a>
+                    <div class="flex items-center  gap-3 justify-center  ">
+                        <p class="font-bold text-2xl">Length:</p>
+                        <input id="rectangle-length" class="text-slate-900 rounded-lg bg-slate-300  font-bold px-5 py-3" type="text" placeholder="Length">
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <div class="flex items-center  gap-3 justify-center x">
+                        <p class="font-bold text-2xl">Width:</p>
+                        <input id="rectangle-width" class="text-slate-900 bg-slate-300 font-bold rounded-lg  px-5 py-3" type="text" placeholder="Width">
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <button id="btn-rectangle " class="text-white font-bold bg-blue-700 px-8 py-2 hover:bg-blue-300 rounded-lg">Calculate</button>
+                    
+
+                </div>
+                <!-- card-3-parallel-->
+                <div class="space-y-4 text-center bg-white rounded-lg p-2 w-full">
+                    <div >
+                        <img style="height:500px ; width:700px;" class="w-full mx-auto" src="./images/parallelogram.png" alt="">
+                    </div>
+                    <h1 class="text-3xl font-bold">Parallelogram</h1>
+                    <a class="font-bold text-slate-700 text-xl" href="https://www.google.com/search?q=formula+of+parallelogram+area&sca_esv=82020f27733c768a&sxsrf=ACQVn09QEFLipfKFs5CP2YeZbKHmnjeyaQ%3A1707583500421&ei=DKjHZf-iGZmYseMPupO-2AY&oq=formula+of+parall+area&gs_lp=Egxnd3Mtd2l6LXNlcnAiFmZvcm11bGEgb2YgcGFyYWxsIGFyZWEqAggAMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMggQABgIGAcYHjIIEAAYCBgHGB4yCBAAGAgYBxgeMggQABgIGAcYHjIIEAAYCBgHGB4yCBAAGAgYBxgeMggQABgIGAcYHkiXKlD3AliQHXADeAGQAQCYAckCoAGkEaoBBTItOC4xuAEByAEA-AEBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAgoQABiABBiKBRhDwgIIEAAYBxgeGA_CAggQIRigARjDBMICCBAAGAcYHhgK4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp">Area(A)= Base * Height</a>
+                    <div class="flex items-center  gap-3 justify-center  ">
+                        <p class="font-bold text-2xl">Base:</p>
+                        <input id="parallel-base" class="text-slate-900 rounded-lg bg-slate-300  font-bold px-5 py-3" type="text" placeholder="Base">
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <div class="flex items-center  gap-3 justify-center x">
+                        <p class="font-bold text-2xl">Height:</p>
+                        <input id="parallel-height" class="text-slate-900 bg-slate-300 font-bold rounded-lg  px-5 py-3" type="text" placeholder="Height">
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <button id="btn-parallel" class="text-white font-bold bg-blue-700 px-8 py-2 hover:bg-blue-300 rounded-lg">Calculate</button>
+                    
+
+                </div>
+                <!-- card-4-rohmbus-->
+                <div class="space-y-4 text-center bg-white rounded-lg p-2 w-full">
+                    <div >
+                        <img style="height:500px ; width:700px;" class="w-full mx-auto" src="./images/rhombus.png" alt="">
+                    </div>
+                    <h1 class="text-3xl font-bold">Rhombus</h1>
+                    <a class="font-bold text-slate-700 text-xl" href="https://www.google.com/search?q=formula+of+rhombus+area&sca_esv=82020f27733c768a&sxsrf=ACQVn09n7NIeDoRb1HIAdw-oyqMem2EjLA%3A1707583787233&ei=K6nHZdj1DbnNseMPtvaS-Ac&ved=0ahUKEwiYt7-onaGEAxW5ZmwGHTa7BH8Q4dUDCBA&uact=5&oq=formula+of+rhombus+area&gs_lp=Egxnd3Mtd2l6LXNlcnAiF2Zvcm11bGEgb2YgcmhvbWJ1cyBhcmVhMgsQABiABBiKBRiRAjILEAAYgAQYigUYkQIyBhAAGAgYHjIGEAAYCBgeMgYQABgIGB4yBhAAGAgYHjIGEAAYCBgeMgYQABgIGB4yBhAAGAgYHjIGEAAYCBgeSIIiUJcHWOYccAJ4AZABAJgBvAKgAdIQqgEFMi04LjG4AQPIAQD4AQHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICChAAGIAEGIoFGEPCAgYQABgHGB7CAggQABgIGAcYHsICBxAAGIAEGA3CAggQABgIGB4YDcICCxAAGIAEGIoFGIYD4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp">Area(A)= 0.5* d<sub>1</sub> * d<sub>2</sub></a>
+                    <div class="flex items-center  gap-3 justify-center  ">
+                        <p class="font-bold text-2xl">D<sub>1</sub>:</p>
+                        <input id="rombush-d1" class="text-slate-900 rounded-lg bg-slate-300  font-bold px-5 py-3" type="text" >
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <div class="flex items-center  gap-3 justify-center x">
+                        <p class="font-bold text-2xl">D<sub>2</sub>:</p>
+                        <input id="rombush-d2" class="text-slate-900 bg-slate-300 font-bold rounded-lg  px-5 py-3" type="text" >
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <button id="btn-rombush" class="text-white font-bold bg-blue-700 px-8 py-2 hover:bg-blue-300 rounded-lg">Calculate</button>
+                    
+
+                </div>
+                
+                <!-- card-5-pentagon-->
+                <div class="space-y-4 text-center bg-white rounded-lg p-2 w-full">
+                    <div >
+                        <img style="height:500px ; width:700px;" class="w-full mx-auto" src="./images/pentagon.png" alt="">
+                    </div>
+                    <h1 class="text-3xl font-bold">Pentagon</h1>
+                    <a class="font-bold text-slate-700 text-xl" href="https://www.google.com/search?q=formula+of+pentagon+area&sca_esv=82020f27733c768a&sxsrf=ACQVn0_wp1Gr6fgj-i-jtkCpViHiV6i7Ow%3A1707584050704&ei=MqrHZd2_Ku3jseMPvpS42Ak&ved=0ahUKEwjdoJCmnqGEAxXtcWwGHT4KDpsQ4dUDCBA&uact=5&oq=formula+of+pentagon+area&gs_lp=Egxnd3Mtd2l6LXNlcnAiGGZvcm11bGEgb2YgcGVudGFnb24gYXJlYTILEAAYgAQYigUYkQIyBRAAGIAEMgYQABgIGB4yBhAAGAgYHjIGEAAYCBgeMgYQABgIGB4yBhAAGAgYHjIGEAAYCBgeMgYQABgIGB4yBhAAGAgYHkj7G1DhAlinF3ABeAGQAQCYAf4BoAHVEqoBBDItMTC4AQPIAQD4AQHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICChAAGIAEGIoFGEPCAgYQABgHGB7CAggQABgIGAcYHsICBxAAGIAEGA3iAwQYACBBiAYBkAYK&sclient=gws-wiz-serp">Area(A)= 0.5* p * b</a>
+                    <div class="flex items-center  gap-3 justify-center  ">
+                        <p class="font-bold text-2xl">P:</p>
+                        <input id="pantagon-p" class="text-slate-900 rounded-lg bg-slate-300  font-bold px-5 py-3" type="text" placeholder="p" >
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <div class="flex items-center  gap-3 justify-center x">
+                        <p class="font-bold text-2xl">B:</p>
+                        <input id="pentagon-b" class="text-slate-900 bg-slate-300 font-bold rounded-lg  px-5 py-3" type="text" placeholder="b" >
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <button id="btn-pentagon" class="text-white font-bold bg-blue-700 px-8 py-2 hover:bg-blue-300 rounded-lg">Calculate</button>
+                    
+
+                </div>
+                <!-- card-6-ellipse-->
+                <div class="space-y-4 text-center bg-white rounded-lg p-2 w-full">
+                    <div >
+                        <img style="height:500px ; width:700px;" class="w-full mx-auto" src="./images/ellipse.png" alt="">
+                    </div>
+                    <h1 class="text-3xl font-bold">Ellipse</h1>
+                    <a class="font-bold text-slate-700 text-xl" href="https://www.google.com/search?q=formula+of+pentagon+area&sca_esv=82020f27733c768a&sxsrf=ACQVn0_wp1Gr6fgj-i-jtkCpViHiV6i7Ow%3A1707584050704&ei=MqrHZd2_Ku3jseMPvpS42Ak&ved=0ahUKEwjdoJCmnqGEAxXtcWwGHT4KDpsQ4dUDCBA&uact=5&oq=formula+of+pentagon+area&gs_lp=Egxnd3Mtd2l6LXNlcnAiGGZvcm11bGEgb2YgcGVudGFnb24gYXJlYTILEAAYgAQYigUYkQIyBRAAGIAEMgYQABgIGB4yBhAAGAgYHjIGEAAYCBgeMgYQABgIGB4yBhAAGAgYHjIGEAAYCBgeMgYQABgIGB4yBhAAGAgYHkj7G1DhAlinF3ABeAGQAQCYAf4BoAHVEqoBBDItMTC4AQPIAQD4AQHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICChAAGIAEGIoFGEPCAgYQABgHGB7CAggQABgIGAcYHsICBxAAGIAEGA3iAwQYACBBiAYBkAYK&sclient=gws-wiz-serp">Area(A)= pie* a * b</a>
+                    <div class="flex items-center  gap-3 justify-center  ">
+                        <p class="font-bold text-2xl">a <span class="text-sm font-semibold">Axis</span>:</p>
+                        <input id="ellipse-a" class="text-slate-900 rounded-lg bg-slate-300  font-bold px-5 py-3" type="text" placeholder="a" >
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <div class="flex items-center  gap-3 justify-center x">
+                        <p class="font-bold text-2xl">b <span class="text-sm font-semibold">Axis</span>:</p>
+                        <input id="ellipse-b" class="text-slate-900 bg-slate-300 font-bold rounded-lg  px-5 py-3" type="text" placeholder="b" >
+                        <p class="font-bold text-2xl">cm</p>
+                    </div>
+                    <button id="btn-ellipes" class="text-white font-bold bg-blue-700 px-8 py-2 hover:bg-blue-300 rounded-lg">Calculate</button>
+                    
+
+                </div>
+                
+
+            </div>
+
+            <!-- right side div -->
+            <!-- triangle -->
+            <div class="text-center  gap-3 space-y-4  p-8 w-full  ">
+                <h1 class="text-3xl font-bold">Area Calculation</h1>
+                <div class="flex items-center 	 gap-1 w-full text-center  ">
+                    <p class="text-xl font-bold">1.Triangle:</p>
+                    <input id="triangle-total" class="px-5 bg-slate-300 
+                       mx-auto   py-2 rounded-lg text-xl font-bold" type="text" placeholder="area">
+                    <p class="text-xl font-bold">cm <sup>2</sup></p>
+                    <button id="triangle-convert" class="font-bold bg-blue-700 px-5 py-2 rounded-lg text-white hover:bg-blue-300">Convert to m<sup>2</sup></button>
+                </div>
+                <!-- rectangle -->
+                <div class="flex items-center gap-1 w-full">
+                    <p class="text-xl font-bold">2.Rectangle:</p>
+                    <input id="rectangle-total" class="px-8 mx-auto bg-slate-300 py-2 rounded-lg text-xl font-bold" type="text" placeholder="area">
+                    <p class="text-xl font-bold">cm <sup>2</sup></p>
+                    <button id="rectangle-convert" class="font-bold bg-blue-700 px-5 py-2 rounded-lg text-white hover:bg-blue-300">Convert to m<sup>2</sup></button>
+                </div>
+                <!-- Parallelogram -->
+                <div class="flex items-center gap-1 w-full">
+                    <p class="text-xl font-bold">3.Parallelogram:</p>
+                    <input id="parallel-total" class="px-5 mx-auto   bg-slate-300  py-2 rounded-lg text-xl font-bold" type="text" placeholder="area">
+                    <p class="text-xl font-bold">cm <sup>2</sup></p>
+                    <button id="parallel-convert" class="font-bold bg-blue-700 px-5 py-2 rounded-lg text-white hover:bg-blue-300">Convert to m<sup>2</sup></button>
+                </div>
+                <!-- Rhombush -->
+                <div class="flex items-center gap-1 w-full">
+                    <p class="text-xl font-bold">4.Rhombush:</p>
+                    <input id="rombush-total" class="px-5 mx-auto  bg-slate-300  py-2 rounded-lg text-xl font-bold" type="text" placeholder="area">
+                    <p class="text-xl font-bold">cm <sup>2</sup></p>
+                    <button id="rombush-convert" class="font-bold bg-blue-700 px-5 py-2 rounded-lg text-white hover:bg-blue-300">Convert to m<sup>2</sup></button>
+                </div>
+                <!-- Pentagon -->
+                <div class="flex items-center gap-1 w-full">
+                    <p class="text-xl font-bold">5.Pentagon:</p>
+                    <input id="pentagon-total" class="px-5 mx-auto  bg-slate-300  py-2 rounded-lg text-xl font-bold" type="text" placeholder="area">
+                    <p class="text-xl font-bold">cm <sup>2</sup></p>
+                    <button id="pentagon-convert" class="font-bold bg-blue-700 px-5 py-2 rounded-lg text-white hover:bg-blue-300">Convert to m<sup>2</sup></button>
+                </div>
+                <!-- Ellipse -->
+                <div class="flex items-center gap-3 w-full">
+                    <p class="text-xl font-bold">6.Ellipse:</p>
+                    <input id="ellipse-total" class="px-5 mx-auto bg-slate-300  py-2 rounded-lg text-xl font-bold" type="text" placeholder="area">
+                    <p class="text-xl font-bold">cm <sup>2</sup></p>
+                    <button id="ellipse-convert" class="font-bold bg-blue-700 px-5 py-2 rounded-lg text-white hover:bg-blue-300">Convert to m<sup>2</sup></button>
+                </div>
+            </div>
+           
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <!--link of js file  -->
+    <script src="./geometry.js"></script>
+    
+</body>
+</html>
